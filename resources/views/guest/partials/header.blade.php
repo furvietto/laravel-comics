@@ -17,7 +17,7 @@
             <li>
                 CHARACTERS
             </li>
-            <li>
+            <li class="active">
                 COMICS
             </li>
             <li>
@@ -42,14 +42,13 @@
                 NEWS
             </li>
             <li>
-                SHOP <i class="fa-regular fa-sort-down"></i>
+                SHOP <i class="fas fa-sort-down"></i>
             </li>
         </ul>
-        <div>
-
+        <div class="search">
+            <span>Search <i class="fas fa-search"></i></span>
         </div>
     </div>
     <div class="header-bottom">
-
     </div>
 </header>

@@ -1,7 +1,9 @@
 header{
     .header-top{
+        padding: 2px;
         background-color: $blueColor;
         color: white;
+        font-size: 0.8em;
         .container-header-top{
             width: 70%;
             margin: 0 auto;
@@ -24,6 +26,34 @@ header{
         }
         ul{
             justify-content: space-between;
+            width: 72%;
+            height: 100%;
+            li{
+                display: flex;
+                align-items: center;
+                &:hover,
+                &.active{
+                    color: $blueColor;
+                    cursor: pointer;
+                    border-bottom: 2px solid $blueColor;
+                }
+            }
+            .fa-sort-down{
+                margin-left: 2px;
+                padding-bottom: 4px;
+                font-size: 0.8em;
+            }
         }
+        .search{
+            width: 10%;
+            border-bottom: 2px solid $blueColor;
+            text-align: right;
+        }
+    }
+    .header-bottom{
+        height: 40vh;
+        background-image: url("../../img/jumbotron.jpg");
+        background-size: cover;
+
     }
 }
