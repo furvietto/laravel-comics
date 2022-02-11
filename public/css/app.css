@@ -3078,7 +3078,7 @@ header .header-middle ul li {
 header .header-middle ul li:hover, header .header-middle ul li.active {
   color: #0282f9;
   cursor: pointer;
-  border-bottom: 2px solid #0282f9;
+  border-bottom: 3px solid #0282f9;
 }
 header .header-middle ul .fa-sort-down {
   margin-left: 2px;
@@ -3097,8 +3097,6 @@ header .header-bottom {
 }
 
 main {
-  background-color: black;
-  padding: 40px 0 20px 0;
   position: relative;
 }
 main .current {
@@ -3109,43 +3107,90 @@ main .current {
   left: 225px;
   top: -23px;
 }
-main .main-container {
+main .main-comics {
+  background-color: black;
+  padding: 40px 0 20px 0;
+}
+main .main-comics .main-container-top {
   width: 70%;
   margin: 0 auto;
 }
-main .main-container .load {
+main .main-comics .main-container-top .load {
   display: flex;
   justify-content: center;
   cursor: pointer;
 }
-main .main-container .load .load-container {
+main .main-comics .main-container-top .load .load-container {
   color: white;
   padding: 10px;
   background-color: #0282f9;
   width: 18%;
   text-align: center;
 }
-main .main-container ul {
+main .main-comics .main-container-top ul {
   flex-wrap: wrap;
 }
-main .main-container ul li {
+main .main-comics .main-container-top ul li {
   width: calc(16.6666666667% - 40px);
   margin: 15px;
   color: white;
 }
-main .main-container ul li:hover {
+main .main-comics .main-container-top ul li:hover {
   cursor: pointer;
 }
-main .main-container ul li .img-container {
+main .main-comics .main-container-top ul li .img-container {
   width: 100%;
   height: 140px;
   overflow: hidden;
 }
-main .main-container ul li .img-container img {
+main .main-comics .main-container-top ul li .img-container img {
   width: 100%;
 }
-main .main-container ul li .series {
+main .main-comics .main-container-top ul li .series {
   margin-top: 20px;
   text-transform: uppercase;
   font-size: 0.8em;
+}
+main .main-links {
+  background-color: #0282f9;
+  padding: 50px 0;
+}
+main .main-links .main-container-bottom {
+  width: 70%;
+  margin: 0 auto;
+}
+main .main-links .main-container-bottom ul {
+  justify-content: space-between;
+  align-items: center;
+}
+main .main-links .main-container-bottom ul li {
+  width: 20%;
+}
+main .main-links .main-container-bottom ul li a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+main .main-links .main-container-bottom ul li a #visa {
+  width: 20%;
+}
+main .main-links .main-container-bottom ul li a #locator {
+  width: 13%;
+}
+main .main-links .main-container-bottom ul li a img {
+  width: 17%;
+  margin-right: 20px;
+}
+
+footer {
+  background-image: url("../../img/footer-bg.jpg");
+  height: 50vh;
+}
+footer .info {
+  background-image: url("../../img/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
 }

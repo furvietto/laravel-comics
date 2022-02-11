@@ -1,1 +1,5 @@
-ciao sono footer
+<footer>
+    <section class="info">
+
+    </section>
+</footer>
