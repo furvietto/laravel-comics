@@ -1,3 +1,4 @@
+
 @extends('guest.layout.base')
 
 @section('documentTitle')

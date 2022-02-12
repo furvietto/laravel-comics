@@ -3033,11 +3033,15 @@
 
 html {
   font-size: 100%;
+  font-family: "Raleway", sans-serif;
 }
 
 ul {
   list-style: none;
-  display: flex;
+}
+
+a {
+  text-decoration: none;
 }
 
 header .header-top {
@@ -3067,17 +3071,19 @@ header .header-middle img {
   width: 70%;
 }
 header .header-middle ul {
+  display: flex;
   justify-content: space-between;
   width: 72%;
   height: 100%;
 }
-header .header-middle ul li {
+header .header-middle ul li a {
+  color: black;
+  height: 100%;
   display: flex;
   align-items: center;
 }
-header .header-middle ul li:hover, header .header-middle ul li.active {
+header .header-middle ul li a:hover, header .header-middle ul li a.active {
   color: #0282f9;
-  cursor: pointer;
   border-bottom: 3px solid #0282f9;
 }
 header .header-middle ul .fa-sort-down {
@@ -3086,9 +3092,31 @@ header .header-middle ul .fa-sort-down {
   font-size: 0.8em;
 }
 header .header-middle .search {
+  position: relative;
   width: 10%;
+}
+header .header-middle .search:before {
+  content: "\F002";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  font-size: 18px;
+  position: absolute;
+  top: 3px;
+  right: 0;
+}
+header .header-middle input {
+  width: 100%;
+  height: 15px;
+  outline: none;
+  border: none;
   border-bottom: 2px solid #0282f9;
   text-align: right;
+  font-weight: bold;
+  color: black;
+  padding: 1em;
+  padding-right: 20px;
 }
 header .header-bottom {
   height: 40vh;
@@ -3128,6 +3156,7 @@ main .main-comics .main-container-top .load .load-container {
   text-align: center;
 }
 main .main-comics .main-container-top ul {
+  display: flex;
   flex-wrap: wrap;
 }
 main .main-comics .main-container-top ul li {
@@ -3160,6 +3189,7 @@ main .main-links .main-container-bottom {
   margin: 0 auto;
 }
 main .main-links .main-container-bottom ul {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -3170,7 +3200,6 @@ main .main-links .main-container-bottom ul li a {
   display: flex;
   align-items: center;
   color: white;
-  text-decoration: none;
   font-size: 0.8em;
 }
 main .main-links .main-container-bottom ul li a #visa {
@@ -3184,13 +3213,94 @@ main .main-links .main-container-bottom ul li a img {
   margin-right: 20px;
 }
 
-footer {
+.footer-top {
   background-image: url("../../img/footer-bg.jpg");
   height: 50vh;
+  display: flex;
 }
-footer .info {
+.footer-top .info {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top .info .contact {
+  display: flex;
+  justify-content: space-between;
+  width: 52%;
+}
+.footer-top .info .contact h2 {
+  color: white;
+  margin: 10px 0;
+  font-size: 1em;
+}
+.footer-top .info .contact ul li {
+  margin-bottom: 5px;
+}
+.footer-top .info .contact ul li a {
+  color: #7c7c7c;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+.footer-top .info .contact ul li a:hover {
+  color: white;
+}
+.footer-top .info p {
+  margin-top: 20px;
+  color: #7c7c7c;
+  font-size: 0.8em;
+  width: 76%;
+  align-self: flex-end;
+}
+.footer-top .info p a {
+  color: #0282f9;
+}
+.footer-top .logo {
   background-image: url("../../img/dc-logo-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
+  width: 50%;
+}
+
+.footer-bottom {
+  height: 15vh;
+  background-color: #303030;
+}
+.footer-bottom .container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.footer-bottom .container button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #303030;
+  color: white;
+  border: 1px solid #0282f9;
+}
+.footer-bottom .container button:hover {
+  box-shadow: 5px 5px #0282f9;
+}
+.footer-bottom .container .follow-us {
+  display: flex;
+  align-items: center;
+}
+.footer-bottom .container .follow-us h3 {
+  color: #0282f9;
+}
+.footer-bottom .container .follow-us ul {
+  display: flex;
+}
+.footer-bottom .container .follow-us ul li {
+  margin-left: 15px;
+  cursor: pointer;
+}
+.footer-bottom .container .follow-us ul li:hover {
+  filter: brightness(2);
 }

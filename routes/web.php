@@ -17,3 +17,48 @@ Route::get('/', function () {
 
     return view('guest.home', ['comic' => config('comics')]);
 })->name("home");
+
+Route::get('/characters', function () {
+
+    return view('guest.characters');
+})->name("characters");
+
+Route::get('/movies', function () {
+
+    return view('guest.movie');
+})->name("movies");
+
+Route::get('/tv', function () {
+
+    return view('guest.tv');
+})->name("tv");
+
+Route::get('/games', function () {
+
+    return view('guest.game');
+})->name("games");
+
+Route::get('/collectibles', function () {
+
+    return view('guest.collectible');
+})->name("collectibles");
+
+Route::get('/videos', function () {
+
+    return view('guest.video');
+})->name("videos");
+
+Route::get('/fans', function () {
+
+    return view('guest.fan');
+})->name("fans");
+
+Route::get('/news', function () {
+
+    return view('guest.new');
+})->name("news");
+
+Route::get('/shop', function () {
+
+    return view('guest.shop');
+})->name("shop");

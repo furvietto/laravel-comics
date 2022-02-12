@@ -25,17 +25,21 @@ header{
             width: 70%;
         }
         ul{
+            display: flex;
             justify-content: space-between;
             width: 72%;
             height: 100%;
             li{
-                display: flex;
-                align-items: center;
-                &:hover,
-                &.active{
-                    color: $blueColor;
-                    cursor: pointer;
-                    border-bottom: 3px solid $blueColor;
+                a{
+                    color: black;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    &:hover,
+                    &.active{
+                        color: $blueColor;
+                        border-bottom: 3px solid $blueColor;
+                    }
                 }
             }
             .fa-sort-down{
@@ -44,11 +48,35 @@ header{
                 font-size: 0.8em;
             }
         }
+
         .search{
+            position: relative;
             width: 10%;
-            border-bottom: 2px solid $blueColor;
-            text-align: right;
         }
+        .search:before {
+            content: "\f002";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+            font-size: 18px;
+            position: absolute;
+            top: 3px;
+            right: 0;
+        }
+            input {
+                width: 100%;
+                height: 15px;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid $blueColor;
+                text-align:right;
+                font-weight: bold;
+                color: black;
+                padding: 1em;
+                padding-right: 20px;
+            }
+        
     }
     .header-bottom{
         height: 40vh;

@@ -15,38 +15,39 @@
         </div>
         <ul>
             <li>
-                CHARACTERS
+                <a class="{{ 'characters' === Route::currentRouteName() ? 'active' : '' }}" href="{{ route('characters')}}">CHARACTERS</a>
             </li>
-            <li class="active">
-                COMICS
-            </li>
-            <li>
-                MOVIES
+            <li >
+                <a class="{{ 'home' === Route::currentRouteName() ? 'active' : '' }}" href="{{route('home')}}">COMICS</a>
             </li>
             <li>
-                TV
+               <a class="{{ 'movies' === Route::currentRouteName() ? 'active' : '' }}" href="{{route('movies')}}">MOVIES</a> 
             </li>
             <li>
-                GAMES
+                <a class="{{  'tv' === Route::currentRouteName() ? 'active' : '' }}" href="{{route('tv')}}">TV</a>            
             </li>
             <li>
-                COLLECTIBLES
+                <a class="{{  'games' === Route::currentRouteName() ? 'active' : '' }}" href="{{route('games')}}">GAMES</a>
             </li>
             <li>
-                VIDEOS
+                <a class="{{  'collectibles' === Route::currentRouteName() ? 'active' : '' }}" href="{{route('collectibles')}}">COLLECTIBLES</a>   
             </li>
             <li>
-                FANS
+                <a class="{{  'videos' === Route::currentRouteName() ? 'active' : '' }}" href="{{route('videos')}}">VIDEOS</a>
             </li>
             <li>
-                NEWS
+                <a class="{{  'fans' === Route::currentRouteName() ? 'active' : '' }}" href="{{route('fans')}}">FANS</a>
             </li>
             <li>
-                SHOP <i class="fas fa-sort-down"></i>
+                <a class="{{  'news' === Route::currentRouteName() ? 'active' : '' }}" href="{{route('news')}}">NEWS</a>    
+            </li>
+            <li>
+                <a class="{{  'shop' === Route::currentRouteName() ? 'active' : '' }}" href="{{route('shop')}}">SHOP <i class="fas fa-sort-down"></i></a>
+                
             </li>
         </ul>
         <div class="search">
-            <span>Search <i class="fas fa-search"></i></span>
+            <input type="text" placeholder="Search">
         </div>
     </div>
     <div class="header-bottom">

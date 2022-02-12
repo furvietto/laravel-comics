@@ -1,10 +1,93 @@
-footer{
+.footer-top{
     background-image: url("../../img/footer-bg.jpg");
     height: 50vh;
+    display: flex;
     .info{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .contact {
+            display: flex;
+            justify-content: space-between;
+            width: 52%;
+            h2{
+                color: white;
+                margin: 10px 0;
+                font-size: 1em;
+            }
+            ul li{
+                margin-bottom: 5px;
+                a{
+                    color: $greyColor;
+                    font-size: 0.8em;
+                    cursor: pointer;
+                    &:hover {
+                        color: white;
+                    }
+                }
+            } 
+              
+        }
+        p{
+            margin-top: 20px;
+            color: #7c7c7c;
+            font-size: 0.8em;
+            width: 76%;
+            align-self: flex-end;
+            a{
+                color:  $blueColor;
+            }
+        }
+    }
+    .logo{
         background-image: url("../../img/dc-logo-bg.png");
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
+        width: 50%;
     }
+}
+.footer-bottom {
+    height: 15vh;
+    background-color: #303030;
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+            button {
+            cursor: pointer;
+            padding: 10px;
+            background-color:#303030;
+            color: white;
+            border: 1px solid $blueColor;
+            &:hover {
+                box-shadow: 5px 5px $blueColor
+                }
+        }
+        .follow-us{
+            display: flex;
+            align-items: center;
+            h3{
+                color: $blueColor;
+            }
+            ul {
+                display: flex;
+                li {
+                    margin-left: 15px;
+                    cursor: pointer;
+                    &:hover {
+                        filter: brightness(2);
+                    }
+                }
+            }
+        }
+    }
+   
 }
