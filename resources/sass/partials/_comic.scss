@@ -1,0 +1,64 @@
+.header-comic{
+    height: 10vh;
+    background-color: $blueColor;
+    img{
+        width: 10%;
+        position: absolute;
+        top: -187px;
+        left: 240px;
+    }
+}
+.main-comic{
+    padding: 30px 0;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    .main-comic-left{
+        width: 70%;
+        font-weight: 700;
+        h2{
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            
+        }
+        .price-container{
+            display: flex;
+            font-size: 0.8em;
+            .price{
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                background-color: $greenColor;
+                padding: 15px;
+                color: #9eef85;
+                #dollar-price{
+                    color: white;
+                }
+            }
+            button{
+                width: 30%;
+                background-color: $greenColor;
+                color: white;
+                font-weight: 700;
+                .fa-sort-down{
+                    vertical-align: text-top;
+                    font-size: 0.8em;
+                }
+            }
+        }
+        .description{
+            font-size: 0.8em;
+            line-height: 25px;
+            color: #6e737d;
+            margin-top: 20px;
+        }
+    }
+    .main-comic-rigth{
+        width: 30%;
+    }
+    .bibliography {
+        height: 40vh;
+        width: 100%;
+    }
+}

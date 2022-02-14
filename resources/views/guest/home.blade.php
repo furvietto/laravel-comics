@@ -17,10 +17,12 @@
                 <ul>
                     @foreach ($comic as $item)
                         <li>
-                            <div class="img-container">
-                                <img src="{{$item["thumb"]}}" alt="{{$item["title"]}}"> 
-                            </div>
-                            <div class="series">{{$item["series"]}}</div>
+                            <a href="{{route("comic", $item["id"])}}">
+                                <div class="img-container">
+                                    <img src="{{$item["thumb"]}}" alt="{{$item["title"]}}"> 
+                                </div>
+                                <div class="series">{{$item["series"]}}</div>
+                            </a>
                         </li>
                     @endforeach
                 </ul>

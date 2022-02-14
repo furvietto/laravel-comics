@@ -14,9 +14,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-
+    
     return view('guest.home', ['comic' => config('comics')]);
 })->name("home");
+
+Route::get('comic/{id}', function ($id) {
+    $collection = collect(config("comics"));
+    $product = $collection->where('id', $id);
+
+    if ($product->count() === 0) {
+        abort(404);
+    }
+
+    $singleComic = '';
+    foreach ($product as $key => $value) {
+        $singleComic = $value;
+    }
+    
+    return view('guest.comic', ["comic" => $singleComic]);
+})->name("comic");
+
+
 
 Route::get('/characters', function () {
 
